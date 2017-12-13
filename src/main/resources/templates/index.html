@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BackboneJS Tutorial</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Todo Apps</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="star ter-template">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Your to do list</h3></div>
+                <ul class="list-group">
+                    <li class="list-group-item">Do something</li>
+                    <li class="list-group-item"><strike>Done</strike></li>
+                </ul>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Do Something</h3></div>
+                <div class="panel-body">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        Done
+                    </button>
+                </div>
+            </div>
+
+
+            <div id="app-container"></div>
+
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script type="text/javascript" src="/backbone-tutorial/static/js/app.js"></script>
+    <script type="text/javascript" src="/backbone-tutorial/static/lib/handlebar-loader.js"></script>
+
+    <!-- Handlebar example -->
+    <script type="text/javascript">
+        window.onload = function () {
+            app();
+         }
+
+    </script>
+
+    </body>
+</html>
