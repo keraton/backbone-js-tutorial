@@ -1,9 +1,11 @@
 package com.github.keraton.backbonetutorial.com.github.keraton.backbonetutorial.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.hateoas.ResourceSupport;
 
 public class Todo extends ResourceSupport{
 
+    @JsonProperty("id")
     private String todoId;
     private String name;
     private String status;
